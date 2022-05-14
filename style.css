@@ -1,0 +1,117 @@
+header {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    flex-direction: column;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+
+}
+button{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    align-self: center;
+    border-radius: 25px;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+button:hover { 
+    background-color: white;
+    color: black;
+}
+h2{
+    text-align: center;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+canvas{
+    height: 60vh;
+    width: 70vw;
+    border: 1px solid black;
+}
+.canvasParent{
+    display: flex;
+    margin-top: 3rem;
+    align-items:center;
+    justify-content: center;
+    
+    
+}
+.countries{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+.card{
+    border: 3px solid white;
+    width: fit-content;
+    background-color: rgb(67, 67, 67)
+}
+.chartBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+input{
+    width: 20%;
+    margin-bottom: 1rem;
+}
+.select{
+    height: 2rem;
+    width: 30%;
+}
+
+.countryTitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:800px){
+    header{
+        display: none;
+    }
+    .buttons{
+        display: none;
+
+    }
+    body{
+        /* display: none; */
+        background-image: url("./image/Capture.JPG");
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .countries{
+        display: none;
+    }
+    /* .countryTitle{
+        display:none;
+    } */
+    
+    .canvasParent{
+        display: none;
+    } 
+}

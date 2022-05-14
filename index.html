@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Corona Virus Data</title>
+</head>
+<body>
+    <div class="mainContainer">
+    <header>
+        <h1>Corona Virus Data</h1>
+    </header>
+    <div class="buttons">
+        <div><h2>Continents</h2></div>
+        <div>
+        <button class="continentsBtn">Asia</button>
+        <button class="continentsBtn">Americas</button>
+        <button class="continentsBtn">Africa</button>
+        <button class="continentsBtn">Europe</button>
+        <button class="continentsBtn">Oceania</button>
+    </div> 
+    </div>
+    <div class="buttons">
+        <button class="statsBtn" data-stat="critical">Critical Condition</button>
+        <button class="statsBtn" data-stat="confirmed">Confirmed Cases</button>
+        <button class="statsBtn" data-stat="recovered">Number of recovered</button>
+        <button class="statsBtn" data-stat="deaths">Deaths</button>
+    </div>
+    <div class="countries">
+        <select class="select" >
+            <!-- <option>Select Content and choose country</option> -->
+        </select>
+
+    </div>
+    
+    <div class = "countryTitle">
+
+    </div>
+
+    <div class="ChartBox">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+
+
+
+      <script src="app.js">
+      </script>
+</body>
+</html>
